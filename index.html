@@ -411,7 +411,7 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
           html += data.date
             ? '<span class="text-sm font-normal" style="color: ' + colors.title + '">' + formatDateIT(data.date) + '</span>'
             : '<span class="inline-flex items-center h-5" title="Inserisci la data" style="color: ' + colors.title + '; opacity: 0.5"><i data-lucide="calendar-days" class="w-5 h-5"></i></span>';
-          html += '<input type="date" value="' + (data.date || '') + '" onpointerdown="datePick(event, this)" onchange="updateData(\'' + p.id + '\', \'date\', this.value)" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" />';
+          html += '<input type="date" value="' + (data.date || '') + '" onpointerdown="datePointer(event)" onclick="datePick(event, this)" onchange="updateData(\'' + p.id + '\', \'date\', this.value)" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer" />';
           html += '</label>';
         }
         if (!preview && !isInterval && data.date && (daysFromPrev !== null || daysFromStart !== null)) {
@@ -1106,10 +1106,14 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
       saveLog(); renderApp();
     };
 
-    // Calendario al primo clic senza doppie aperture: con il mouse su Chrome/Edge il calendario
-    // si aprirebbe solo dall'iconcina, quindi lo apriamo noi; touch e Firefox lo aprono già da soli.
+    // Calendario al primo clic, una sola volta.
+    // Con il mouse (PC, qualsiasi browser) lo apriamo noi con showPicker: il campo data è invisibile e da solo
+    // su Chrome/Edge/Firefox per PC si aprirebbe solo cliccando la sua piccola icona. Il clic nativo viene
+    // annullato per non aprirlo due volte. Al tocco (telefono) il browser apre già il calendario da solo.
+    let lastPointer = '';
+    window.datePointer = function (e) { lastPointer = e.pointerType || ''; };
     window.datePick = function (e, el) {
-      if (e.pointerType !== 'mouse' || /Firefox/i.test(navigator.userAgent) || !el.showPicker) return;
+      if (lastPointer !== 'mouse' || !el.showPicker) return;
       e.preventDefault();
       try { el.showPicker(); } catch (err) {}
     };
