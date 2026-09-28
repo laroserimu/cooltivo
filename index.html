@@ -788,7 +788,7 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
         + '</div>'
         + '<div id="cp-panel" class="hidden mt-3 p-4 bg-slate-900 border border-slate-800 rounded-lg space-y-4">'
         + cpRow('l', 'Luminosità', 100) + cpRow('c', 'Croma', 37) + cpRow('h', 'Tinta', 360)
-        + '<div class="flex items-center gap-3"><label class="text-xs text-slate-400 w-24">HEX</label><input id="cp-hex" type="text" maxlength="7" spellcheck="false" oninput="cpHex(this.value)" class="flex-1 p-2 bg-slate-950 border border-slate-800 rounded-lg text-sm text-white uppercase tracking-wider"/></div>'
+        + '<div class="flex items-center gap-3"><input id="cp-hex" type="text" placeholder="HEX" aria-label="Codice HEX" maxlength="7" spellcheck="false" oninput="cpHex(this.value)" class="flex-1 min-w-0 p-2 bg-slate-950 border border-slate-800 rounded-lg text-sm text-white uppercase tracking-wider"/></div>'
         + '<p id="cp-note" class="text-[11px] text-amber-400 -mt-2 empty:hidden"></p>'
         + '</div>'
         + '</div></section>'
@@ -808,9 +808,11 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
     function cpFromHex(hex) { const o = hexToOklch(hex); return { l: Math.round(o.l * 100), c: Math.round(o.c * 100), h: Math.round(o.h) }; }
     function cpToHex(v) { return oklchToHex(v.l / 100, v.c / 100, v.h); }
     function cpRow(k, label, max) {
-      return '<div class="flex items-center gap-3"><label class="text-xs text-slate-400 w-24">' + label + '</label>'
-        + '<input id="cp-' + k + '" type="range" min="0" max="' + max + '" step="1" oninput="cpSlide()" class="cp-range flex-1"/>'
-        + '<span id="cp-' + k + '-v" class="text-xs text-slate-300 w-10 text-right tabular-nums"></span></div>';
+      // Niente didascalia a lato (il nome resta come suggerimento al passaggio e per l'accessibilità);
+      // min-w-0 evita che il cursore esca dal pannello sugli schermi stretti
+      return '<div class="flex items-center gap-3 min-w-0">'
+        + '<input id="cp-' + k + '" type="range" min="0" max="' + max + '" step="1" oninput="cpSlide()" title="' + label + '" aria-label="' + label + '" class="cp-range flex-1 min-w-0 w-full"/>'
+        + '<span id="cp-' + k + '-v" class="text-xs text-slate-300 w-10 shrink-0 text-right tabular-nums"></span></div>';
     }
     function toggleColorPanel() {
       const p = document.getElementById('cp-panel');
