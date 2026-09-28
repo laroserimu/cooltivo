@@ -866,6 +866,16 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
       return { version: 1, plants: [], lastBackup: null };
     }
     let store = loadStore();
+    (function migrate() {
+      let changed = false;
+      store.plants.forEach(pl => {
+        if (!pl.cycleId) { pl.cycleId = 'k' + newId(); changed = true; }
+        const before = JSON.stringify(pl.log || {});
+        dropArchived(pl.log || (pl.log = {}), pl.cycles);
+        if (JSON.stringify(pl.log) !== before) changed = true;
+      });
+      if (changed) saveStore();
+    })();
 
     function saveStore() {
       try { localStorage.setItem(STORE_KEY, JSON.stringify(store)); }
@@ -1030,7 +1040,7 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
     }
 
     function newPlant() {
-      const pl = { id: newId(), config: defaultConfig(), log: {}, cycles: [], createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() };
+      const pl = { id: newId(), cycleId: 'k' + newId(), config: defaultConfig(), log: {}, cycles: [], createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() };
       store.plants.push(pl); saveStore();
       location.hash = '#/editor/' + pl.id;
     }
@@ -1071,20 +1081,42 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
       return out;
     }
 
+    // Una fase del ciclo in corso è "già archiviata" se un ciclo chiuso ha la stessa fase con la stessa data
+    // (o, senza data, lo stesso identico contenuto): succede quando un dispositivo ha chiuso il ciclo e l'altro no.
+    function sameEntry(x, y) {
+      if (!x || !y) return false;
+      if (x.date || y.date) return !!x.date && x.date === y.date;
+      return JSON.stringify(x) === JSON.stringify(y);
+    }
+    function dropArchived(log, cycles) {
+      Object.keys(log || {}).forEach(k => { if ((cycles || []).some(c => c.log && sameEntry(c.log[k], log[k]))) delete log[k]; });
+      return log;
+    }
+
     function mergePlant(inc) {
       const cur = getPlant(inc.id);
       if (!cur) { store.plants.push(inc); return; }
       const incNewer = (inc.updatedAt || '') > (cur.updatedAt || '');
       const newer = incNewer ? inc : cur, older = incNewer ? cur : inc;
-      const log = {};
-      new Set(Object.keys(older.log || {}).concat(Object.keys(newer.log || {}))).forEach(k => { log[k] = mergeEntry((older.log || {})[k], (newer.log || {})[k]); });
+      // Cicli archiviati: unione senza doppioni (per codice, o per data e contenuto nei dati più vecchi)
       const seen = new Set(), cycles = [];
       (cur.cycles || []).concat(inc.cycles || []).forEach(c => {
-        const k = c.closedAt + '|' + JSON.stringify(c.log);
+        const k = c.id || (c.closedAt + '|' + JSON.stringify(c.log));
         if (!seen.has(k)) { seen.add(k); cycles.push(c); }
       });
       cycles.sort((x, y) => (x.closedAt || '').localeCompare(y.closedAt || ''));
-      Object.assign(cur, { config: newer.config, log: log, cycles: cycles, updatedAt: newer.updatedAt });
+      const archived = new Set(cycles.map(c => c.id).filter(Boolean));
+      // Ciclo in corso: se un dispositivo ha già chiuso il ciclo che l'altro ha ancora aperto, vale quello nuovo
+      let log, cycleId;
+      if (cur.cycleId && inc.cycleId && cur.cycleId !== inc.cycleId && archived.has(cur.cycleId)) { log = inc.log || {}; cycleId = inc.cycleId; }
+      else if (cur.cycleId && inc.cycleId && cur.cycleId !== inc.cycleId && archived.has(inc.cycleId)) { log = cur.log || {}; cycleId = cur.cycleId; }
+      else {
+        log = {};
+        new Set(Object.keys(older.log || {}).concat(Object.keys(newer.log || {}))).forEach(k => { log[k] = mergeEntry((older.log || {})[k], (newer.log || {})[k]); });
+        cycleId = newer.cycleId || older.cycleId;
+      }
+      dropArchived(log, cycles);
+      Object.assign(cur, { config: newer.config, log: log, cycles: cycles, cycleId: cycleId || ('k' + newId()), updatedAt: newer.updatedAt });
     }
 
     function importBackup(input) {
@@ -1095,7 +1127,7 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
         try {
           const s = JSON.parse(r.result);
           if (!s || !Array.isArray(s.plants)) throw new Error();
-          s.plants = s.plants.map(p => ({ id: String(p.id), config: cleanConfig(p.config), log: p.log || {}, cycles: (p.cycles || []).map(c => ({ id: c.id, closedAt: c.closedAt, config: cleanConfig(c.config), log: c.log || {} })), createdAt: p.createdAt, updatedAt: p.updatedAt }));
+          s.plants = s.plants.map(p => ({ id: String(p.id), cycleId: p.cycleId, config: cleanConfig(p.config), log: p.log || {}, cycles: (p.cycles || []).map(c => ({ id: c.id, closedAt: c.closedAt, config: cleanConfig(c.config), log: c.log || {} })), createdAt: p.createdAt, updatedAt: p.updatedAt }));
           const known = s.plants.filter(p => getPlant(p.id)).length;
           const nuove = s.plants.length - known;
           const txt = [];
@@ -1561,9 +1593,11 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
       if (!hasData) return showToast('Il ciclo è vuoto: niente da archiviare');
       if (!confirm('Chiudere il ciclo di "' + current.config.appTitle + '"?\n\nIl ciclo verrà archiviato e resterà consultabile in fondo al diario. Il diario ripartirà vuoto.')) return;
       current.cycles = current.cycles || [];
-      const cycleId = 'c' + newId();
+      // Il ciclo archiviato conserva il codice del ciclo in corso; il nuovo ciclo ne riceve uno nuovo
+      const cycleId = current.cycleId || ('c' + newId());
       current.cycles.push({ id: cycleId, closedAt: todayISO(), config: JSON.parse(JSON.stringify(current.config)), log: current.log });
       current.log = {};
+      current.cycleId = 'k' + newId();
       for (const p of photos) { p.cycleId = cycleId; await putPhoto(p); }
       touch(current);
       showDiary(current.id);
@@ -1653,7 +1687,7 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
       const existing = getPlant(pendingImport.id);
       if (existing) { existing.config = pendingImport.config; touch(existing); }
       else {
-        store.plants.push({ id: pendingImport.id, config: pendingImport.config, log: {}, cycles: [], createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() });
+        store.plants.push({ id: pendingImport.id, cycleId: 'k' + newId(), config: pendingImport.config, log: {}, cycles: [], createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() });
         saveStore();
       }
       const id = pendingImport.id; pendingImport = null;
