@@ -1,5 +1,5 @@
 // Cooltivo: funzionamento offline. Serve i file dalla cache e li aggiorna in background.
-const CACHE = 'cooltivo-v2';
+const CACHE = 'cooltivo-v3';
 const ASSETS = [
   "./",
   "./index.html",
