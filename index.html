@@ -14,6 +14,7 @@
     @font-face { font-family: 'Instrument Serif'; font-weight: 400; font-display: swap; src: url('fonts/instrument-serif-400.woff2') format('woff2'); }
     @font-face { font-family: 'Overlock'; font-weight: 400; font-display: swap; src: url('fonts/overlock-400.woff2') format('woff2'); }
     @font-face { font-family: 'Overlock'; font-weight: 700; font-display: swap; src: url('fonts/overlock-700.woff2') format('woff2'); }
+    @font-face { font-family: 'Overlock'; font-weight: 400; font-style: italic; font-display: swap; src: url('fonts/overlock-400-italic.woff2') format('woff2'); }
     @font-face { font-family: 'Orbitron'; font-weight: 400; font-display: swap; src: url('fonts/orbitron-400.woff2') format('woff2'); }
     @font-face { font-family: 'Orbitron'; font-weight: 700; font-display: swap; src: url('fonts/orbitron-700.woff2') format('woff2'); }
     @font-face { font-family: 'Roboto'; font-weight: 400; font-display: swap; src: url('fonts/roboto-400.woff2') format('woff2'); }
@@ -21,7 +22,7 @@
     @font-face { font-family: 'Roboto'; font-weight: 700; font-display: swap; src: url('fonts/roboto-700.woff2') format('woff2'); }
   </style>
   <!-- Tailwind CSS v3.4 compilato (solo le classi usate) -->
-  <style id="tw-css">*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.pointer-events-none{pointer-events:none}.collapse{visibility:collapse}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0}.inset-y-0{top:0;bottom:0}.bottom-0{bottom:0}.bottom-4{bottom:1rem}.bottom-8{bottom:2rem}.left-0{left:0}.left-6{left:1.5rem}.left-\[1\.15rem\]{left:1.15rem}.left-\[8\.5rem\]{left:8.5rem}.right-0{right:0}.right-4{right:1rem}.right-6{right:1.5rem}.top-0{top:0}.top-16{top:4rem}.top-2{top:.5rem}.top-4{top:1rem}.z-0{z-index:0}.z-10{z-index:10}.z-40{z-index:40}.z-50{z-index:50}.z-\[100\]{z-index:100}.z-\[110\]{z-index:110}.z-\[120\]{z-index:120}.col-span-2{grid-column:span 2/span 2}.mx-auto{margin-left:auto;margin-right:auto}.-ml-1\.5{margin-left:-.375rem}.-mt-2{margin-top:-.5rem}.mb-1\.5{margin-bottom:.375rem}.mb-10{margin-bottom:2.5rem}.mb-14{margin-bottom:3.5rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-1{margin-left:.25rem}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-12{margin-top:3rem}.mt-2{margin-top:.5rem}.mt-3{margin-top:.75rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.aspect-square{aspect-ratio:1/1}.h-11{height:2.75rem}.h-16{height:4rem}.h-3{height:.75rem}.h-3\.5{height:.875rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-8{height:2rem}.h-\[2px\]{height:2px}.h-\[60px\]{height:60px}.h-full{height:100%}.h-px{height:1px}.max-h-full{max-height:100%}.min-h-0{min-height:0}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-14{width:3.5rem}.w-24{width:6rem}.w-3{width:.75rem}.w-3\.5{width:.875rem}.w-4{width:1rem}.w-40{width:10rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-8{width:2rem}.w-\[1px\]{width:1px}.w-\[calc\(\(100\%_-_3rem\)_\*_var\(--p\)\)\]{width:calc((100% - 3rem)*var(--p))}.w-full{width:100%}.w-px{width:1px}.min-w-0{min-width:0}.min-w-\[4\.5rem\]{min-width:4.5rem}.min-w-\[500px\]{min-width:500px}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-\[340px\]{max-width:340px}.max-w-full{max-width:100%}.max-w-md{max-width:28rem}.max-w-xl{max-width:36rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.flex-grow{flex-grow:1}.border-collapse{border-collapse:collapse}.-translate-x-1\/2{--tw-translate-x:-50%}.-translate-x-1\/2,.translate-y-2{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-2{--tw-translate-y:0.5rem}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.resize-y{resize:vertical}.resize{resize:both}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.justify-evenly{justify-content:space-evenly}.gap-1{gap:.25rem}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-x-4{-moz-column-gap:1rem;column-gap:1rem}.gap-y-0\.5{row-gap:.125rem}.gap-y-1{row-gap:.25rem}.gap-y-2{row-gap:.5rem}.space-y-1\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.375rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.375rem*var(--tw-space-y-reverse))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem*var(--tw-space-y-reverse))}.space-y-3>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.75rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.75rem*var(--tw-space-y-reverse))}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem*var(--tw-space-y-reverse))}.space-y-6>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem*var(--tw-space-y-reverse))}.space-y-8>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem*var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.overflow-y-hidden{overflow-y:hidden}.truncate{overflow:hidden;text-overflow:ellipsis}.truncate,.whitespace-nowrap{white-space:nowrap}.whitespace-pre-wrap{white-space:pre-wrap}.rounded{border-radius:.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-md{border-radius:.375rem}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-r{border-right-width:1px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-emerald-500\/20{border-color:rgba(16,185,129,.2)}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85/var(--tw-border-opacity,1))}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59/var(--tw-border-opacity,1))}.bg-\[\#000000\]\/10,.bg-black\/10{background-color:rgba(0,0,0,.1)}.bg-black\/60{background-color:rgba(0,0,0,.6)}.bg-black\/70{background-color:rgba(0,0,0,.7)}.bg-emerald-500\/10{background-color:rgba(16,185,129,.1)}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105/var(--tw-bg-opacity,1))}.bg-emerald-600\/10{background-color:rgba(5,150,105,.1)}.bg-emerald-600\/20{background-color:rgba(5,150,105,.2)}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59/var(--tw-bg-opacity,1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42/var(--tw-bg-opacity,1))}.bg-slate-950{--tw-bg-opacity:1;background-color:rgb(2 6 23/var(--tw-bg-opacity,1))}.bg-slate-950\/95{background-color:rgba(2,6,23,.95)}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.object-contain{-o-object-fit:contain;object-fit:contain}.p-1{padding:.25rem}.p-1\.5{padding:.375rem}.p-2{padding:.5rem}.p-2\.5{padding:.625rem}.p-3{padding:.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-1{padding-left:.25rem;padding-right:.25rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-0\.5{padding-top:.125rem;padding-bottom:.125rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pb-16{padding-bottom:4rem}.pb-2{padding-bottom:.5rem}.pb-4{padding-bottom:1rem}.pb-6{padding-bottom:1.5rem}.pb-8{padding-bottom:2rem}.pl-1{padding-left:.25rem}.pl-4{padding-left:1rem}.pr-2{padding-right:.5rem}.pt-4{padding-top:1rem}.pt-6{padding-top:1.5rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.text-right{text-align:right}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.normal-case{text-transform:none}.tabular-nums{--tw-numeric-spacing:tabular-nums;font-variant-numeric:var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction)}.leading-none{line-height:1}.leading-tight{line-height:1.25}.tracking-normal{letter-spacing:0}.tracking-wide{letter-spacing:.025em}.tracking-wider{letter-spacing:.05em}.text-amber-400{--tw-text-opacity:1;color:rgb(251 191 36/var(--tw-text-opacity,1))}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183/var(--tw-text-opacity,1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153/var(--tw-text-opacity,1))}.text-emerald-500{--tw-text-opacity:1;color:rgb(16 185 129/var(--tw-text-opacity,1))}.text-slate-100{--tw-text-opacity:1;color:rgb(241 245 249/var(--tw-text-opacity,1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240/var(--tw-text-opacity,1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225/var(--tw-text-opacity,1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184/var(--tw-text-opacity,1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.accent-emerald-500{accent-color:#10b981}.opacity-0{opacity:0}.opacity-30{opacity:.3}.opacity-40{opacity:.4}.opacity-50{opacity:.5}.opacity-60{opacity:.6}.opacity-70{opacity:.7}.opacity-80{opacity:.8}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgba(0,0,0,.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color)}.shadow-2xl,.shadow-lg{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-emerald-900\/20{--tw-shadow-color:rgba(6,78,59,.2);--tw-shadow:var(--tw-shadow-colored)}.outline-none{outline:2px solid transparent;outline-offset:2px}.outline{outline-style:solid}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur{--tw-backdrop-blur:blur(8px)}.backdrop-blur,.backdrop-blur-sm{-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-colors{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-300{transition-duration:.3s}.duration-500{transition-duration:.5s}.empty\:hidden:empty{display:none}.hover\:bg-emerald-500:hover{--tw-bg-opacity:1;background-color:rgb(16 185 129/var(--tw-bg-opacity,1))}.hover\:bg-emerald-600\/25:hover{background-color:rgba(5,150,105,.25)}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85/var(--tw-bg-opacity,1))}.hover\:bg-slate-800:hover{--tw-bg-opacity:1;background-color:rgb(30 41 59/var(--tw-bg-opacity,1))}.hover\:text-red-400:hover{--tw-text-opacity:1;color:rgb(248 113 113/var(--tw-text-opacity,1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.hover\:opacity-100:hover{opacity:1}.focus\:border-emerald-500:focus{--tw-border-opacity:1;border-color:rgb(16 185 129/var(--tw-border-opacity,1))}.disabled\:cursor-default:disabled{cursor:default}.disabled\:cursor-not-allowed:disabled{cursor:not-allowed}.disabled\:opacity-20:disabled{opacity:.2}.disabled\:hover\:bg-transparent:hover:disabled{background-color:transparent}@media (min-width:640px){.sm\:left-14{left:3.5rem}.sm\:right-14{right:3.5rem}.sm\:block{display:block}.sm\:inline{display:inline}.sm\:w-24{width:6rem}.sm\:w-\[calc\(\(100\%_-_7rem\)_\*_var\(--p\)\)\]{width:calc((100% - 7rem)*var(--p))}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-xs{font-size:.75rem;line-height:1rem}}@media (min-width:768px){.md\:block{display:block}.md\:flex{display:flex}.md\:hidden{display:none}.md\:p-6{padding:1.5rem}.md\:p-8{padding:2rem}.md\:pl-16{padding-left:4rem}}@media (min-width:1024px){.lg\:h-screen{height:100vh}.lg\:w-\[480px\]{width:480px}.lg\:flex-row{flex-direction:row}.lg\:overflow-hidden{overflow:hidden}.lg\:overflow-y-auto{overflow-y:auto}}</style>
+  <style id="tw-css">*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.pointer-events-none{pointer-events:none}.collapse{visibility:collapse}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0}.inset-x-0{left:0;right:0}.inset-y-0{top:0;bottom:0}.bottom-0{bottom:0}.bottom-4{bottom:1rem}.bottom-8{bottom:2rem}.left-0{left:0}.left-6{left:1.5rem}.left-\[1\.15rem\]{left:1.15rem}.left-\[4\.25rem\]{left:4.25rem}.right-0{right:0}.right-4{right:1rem}.right-6{right:1.5rem}.top-0{top:0}.top-1\/2{top:50%}.top-2{top:.5rem}.top-4{top:1rem}.z-0{z-index:0}.z-10{z-index:10}.z-30{z-index:30}.z-40{z-index:40}.z-50{z-index:50}.z-\[100\]{z-index:100}.z-\[110\]{z-index:110}.z-\[120\]{z-index:120}.col-span-2{grid-column:span 2/span 2}.-mx-4{margin-left:-1rem;margin-right:-1rem}.mx-auto{margin-left:auto;margin-right:auto}.-ml-1\.5{margin-left:-.375rem}.-mt-2{margin-top:-.5rem}.-mt-6{margin-top:-1.5rem}.mb-1{margin-bottom:.25rem}.mb-1\.5{margin-bottom:.375rem}.mb-10{margin-bottom:2.5rem}.mb-14{margin-bottom:3.5rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-1{margin-left:.25rem}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-12{margin-top:3rem}.mt-2{margin-top:.5rem}.mt-3{margin-top:.75rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.aspect-square{aspect-ratio:1/1}.h-1\.5{height:.375rem}.h-11{height:2.75rem}.h-16{height:4rem}.h-3{height:.75rem}.h-3\.5{height:.875rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-8{height:2rem}.h-\[2px\]{height:2px}.h-\[60px\]{height:60px}.h-full{height:100%}.h-px{height:1px}.max-h-full{max-height:100%}.min-h-0{min-height:0}.min-h-16{min-height:4rem}.min-h-screen{min-height:100vh}.w-1\.5{width:.375rem}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-14{width:3.5rem}.w-24{width:6rem}.w-3{width:.75rem}.w-3\.5{width:.875rem}.w-4{width:1rem}.w-40{width:10rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-7{width:1.75rem}.w-8{width:2rem}.w-\[1px\]{width:1px}.w-\[calc\(\(100\%_-_3rem\)_\*_var\(--p\)\)\]{width:calc((100% - 3rem)*var(--p))}.w-full{width:100%}.w-px{width:1px}.min-w-0{min-width:0}.min-w-\[4\.5rem\]{min-width:4.5rem}.min-w-\[500px\]{min-width:500px}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-\[340px\]{max-width:340px}.max-w-full{max-width:100%}.max-w-md{max-width:28rem}.max-w-xl{max-width:36rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.flex-grow{flex-grow:1}.border-collapse{border-collapse:collapse}.-translate-x-1\/2{--tw-translate-x:-50%}.-translate-x-1\/2,.translate-y-2{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-2{--tw-translate-y:0.5rem}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.resize-y{resize:vertical}.resize{resize:both}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.justify-evenly{justify-content:space-evenly}.gap-1{gap:.25rem}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-x-2{-moz-column-gap:.5rem;column-gap:.5rem}.gap-x-3{-moz-column-gap:.75rem;column-gap:.75rem}.gap-x-4{-moz-column-gap:1rem;column-gap:1rem}.gap-x-8{-moz-column-gap:2rem;column-gap:2rem}.gap-y-0\.5{row-gap:.125rem}.gap-y-1{row-gap:.25rem}.gap-y-2{row-gap:.5rem}.space-y-1\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.375rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.375rem*var(--tw-space-y-reverse))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem*var(--tw-space-y-reverse))}.space-y-3>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.75rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.75rem*var(--tw-space-y-reverse))}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem*var(--tw-space-y-reverse))}.space-y-6>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem*var(--tw-space-y-reverse))}.space-y-8>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem*var(--tw-space-y-reverse))}.self-stretch{align-self:stretch}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.overflow-y-hidden{overflow-y:hidden}.truncate{overflow:hidden;text-overflow:ellipsis}.truncate,.whitespace-nowrap{white-space:nowrap}.whitespace-pre-wrap{white-space:pre-wrap}.rounded{border-radius:.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-md{border-radius:.375rem}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-r{border-right-width:1px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-emerald-500\/20{border-color:rgba(16,185,129,.2)}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85/var(--tw-border-opacity,1))}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59/var(--tw-border-opacity,1))}.bg-\[\#000000\]\/10,.bg-black\/10{background-color:rgba(0,0,0,.1)}.bg-black\/60{background-color:rgba(0,0,0,.6)}.bg-black\/70{background-color:rgba(0,0,0,.7)}.bg-emerald-500\/10{background-color:rgba(16,185,129,.1)}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105/var(--tw-bg-opacity,1))}.bg-emerald-600\/10{background-color:rgba(5,150,105,.1)}.bg-emerald-600\/20{background-color:rgba(5,150,105,.2)}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59/var(--tw-bg-opacity,1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42/var(--tw-bg-opacity,1))}.bg-slate-950{--tw-bg-opacity:1;background-color:rgb(2 6 23/var(--tw-bg-opacity,1))}.bg-slate-950\/95{background-color:rgba(2,6,23,.95)}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.object-contain{-o-object-fit:contain;object-fit:contain}.p-1{padding:.25rem}.p-1\.5{padding:.375rem}.p-2{padding:.5rem}.p-2\.5{padding:.625rem}.p-3{padding:.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-1{padding-left:.25rem;padding-right:.25rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-0\.5{padding-top:.125rem;padding-bottom:.125rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pb-16{padding-bottom:4rem}.pb-2{padding-bottom:.5rem}.pb-4{padding-bottom:1rem}.pb-6{padding-bottom:1.5rem}.pb-8{padding-bottom:2rem}.pl-1{padding-left:.25rem}.pl-4{padding-left:1rem}.pr-2{padding-right:.5rem}.pt-4{padding-top:1rem}.pt-6{padding-top:1.5rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.normal-case{text-transform:none}.italic{font-style:italic}.tabular-nums{--tw-numeric-spacing:tabular-nums;font-variant-numeric:var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction)}.leading-none{line-height:1}.leading-tight{line-height:1.25}.tracking-normal{letter-spacing:0}.tracking-wide{letter-spacing:.025em}.tracking-wider{letter-spacing:.05em}.text-amber-400{--tw-text-opacity:1;color:rgb(251 191 36/var(--tw-text-opacity,1))}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183/var(--tw-text-opacity,1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153/var(--tw-text-opacity,1))}.text-emerald-500{--tw-text-opacity:1;color:rgb(16 185 129/var(--tw-text-opacity,1))}.text-slate-100{--tw-text-opacity:1;color:rgb(241 245 249/var(--tw-text-opacity,1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240/var(--tw-text-opacity,1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225/var(--tw-text-opacity,1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184/var(--tw-text-opacity,1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.underline{text-decoration-line:underline}.decoration-1{text-decoration-thickness:1px}.underline-offset-4{text-underline-offset:4px}.accent-emerald-500{accent-color:#10b981}.opacity-0{opacity:0}.opacity-30{opacity:.3}.opacity-40{opacity:.4}.opacity-50{opacity:.5}.opacity-60{opacity:.6}.opacity-70{opacity:.7}.opacity-80{opacity:.8}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgba(0,0,0,.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color)}.shadow-2xl,.shadow-lg{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-emerald-900\/20{--tw-shadow-color:rgba(6,78,59,.2);--tw-shadow:var(--tw-shadow-colored)}.outline-none{outline:2px solid transparent;outline-offset:2px}.outline{outline-style:solid}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur{--tw-backdrop-blur:blur(8px)}.backdrop-blur,.backdrop-blur-sm{-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-colors{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-300{transition-duration:.3s}.duration-500{transition-duration:.5s}.empty\:hidden:empty{display:none}.hover\:bg-emerald-500:hover{--tw-bg-opacity:1;background-color:rgb(16 185 129/var(--tw-bg-opacity,1))}.hover\:bg-emerald-600\/25:hover{background-color:rgba(5,150,105,.25)}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85/var(--tw-bg-opacity,1))}.hover\:bg-slate-800:hover{--tw-bg-opacity:1;background-color:rgb(30 41 59/var(--tw-bg-opacity,1))}.hover\:text-red-400:hover{--tw-text-opacity:1;color:rgb(248 113 113/var(--tw-text-opacity,1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.hover\:opacity-100:hover{opacity:1}.focus\:border-emerald-500:focus{--tw-border-opacity:1;border-color:rgb(16 185 129/var(--tw-border-opacity,1))}.disabled\:cursor-default:disabled{cursor:default}.disabled\:cursor-not-allowed:disabled{cursor:not-allowed}.disabled\:opacity-20:disabled{opacity:.2}.disabled\:hover\:bg-transparent:hover:disabled{background-color:transparent}@media (min-width:640px){.sm\:left-14{left:3.5rem}.sm\:left-\[8\.5rem\]{left:8.5rem}.sm\:right-14{right:3.5rem}.sm\:block{display:block}.sm\:inline{display:inline}.sm\:w-24{width:6rem}.sm\:w-\[calc\(\(100\%_-_7rem\)_\*_var\(--p\)\)\]{width:calc((100% - 7rem)*var(--p))}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-xs{font-size:.75rem;line-height:1rem}}@media (min-width:768px){.md\:block{display:block}.md\:flex{display:flex}.md\:hidden{display:none}.md\:p-8{padding:2rem}.md\:px-3{padding-left:.75rem;padding-right:.75rem}.md\:py-6{padding-top:1.5rem;padding-bottom:1.5rem}.md\:pl-16{padding-left:4rem}}@media (min-width:1024px){.lg\:h-screen{height:100vh}.lg\:w-\[480px\]{width:480px}.lg\:flex-row{flex-direction:row}.lg\:overflow-hidden{overflow:hidden}.lg\:overflow-y-auto{overflow-y:auto}}</style>
   <style>
     .font-title { font-family: 'Instrument Serif', serif; }
     .font-body { font-family: 'Overlock', sans-serif; }
@@ -259,7 +260,8 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
     }
 
     // onlyReal: per i cicli archiviati si mostrano solo le fasi osservate, niente previsioni
-    function buildGantt(config, log, onlyReal) {
+    // photos: elenco delle foto del diario ({ takenAt }), nello stesso ordine della galleria
+    function buildGantt(config, log, onlyReal, photos) {
       const colors = getColors(config.bgColor);
       const DAY = 86400000;
       const phases = config.phases;
@@ -273,9 +275,13 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
 
       // Intervallo del grafico: dalla prima data all'ultima, con un piccolo margine ai lati
       // (non più a mesi interi, così non resta spazio vuoto se il ciclo inizia a fine mese)
-      const first = items[0].at;
-      let maxMs = first.getTime();
+      // Foto: un segno sulla data di scatto; il grafico si allarga per includerle
+      const shots = (photos || []).map((ph, k) => ({ at: new Date(ph.takenAt), k: k })).filter(x => !isNaN(x.at.getTime()));
+      let first = items[0].at;
+      shots.forEach(x => { if (x.at < first) first = x.at; });
+      let maxMs = items[0].at.getTime();
       items.forEach(it => { if (it.kind === 'bar') maxMs = Math.max(maxMs, it.end.getTime()); if (it.kind === 'point') maxMs = Math.max(maxMs, it.at.getTime()); });
+      shots.forEach(x => { maxMs = Math.max(maxMs, x.at.getTime()); });
       if (maxMs === first.getTime()) maxMs += 30 * DAY;
       const margin = Math.max(2 * DAY, (maxMs - first.getTime()) * 0.02);
       const chartStartMs = first.getTime() - margin;
@@ -303,15 +309,34 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
         if (t.show) firstLabel = false;
       });
 
-      // Colonne: nome fase (w-24) | durata in giorni (w-10, sempre allineata) | grafico
+      // Colonne: fase (icona su telefono, icona + nome da tablet in su) | durata in giorni | grafico.
+      // La colonna delle fasi resta ferma a sinistra quando il grafico scorre in orizzontale:
+      // hanno lo stesso fondo del riquadro (colore pianta + velo nero al 10%) per coprire le barre che ci passano sotto.
+      const stickyBg = 'background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), ' + colors.bg + ';';
       let html = '<div class="overflow-x-auto pb-2"><div class="min-w-[500px] relative">';
-      html += '<div class="flex border-b pb-2 mb-3 text-[10px] uppercase tracking-wider font-semibold" style="border-color: ' + colors.text + '15; color: ' + colors.text + '"><div class="w-24 shrink-0 opacity-50">Fase</div><div class="w-10 shrink-0 text-right pr-2 opacity-50">gg</div><div class="flex-grow relative h-4 normal-case tracking-normal">';
+      html += '<div class="flex border-b pb-2 mb-1 text-[10px] uppercase tracking-wider font-semibold" style="border-color: ' + colors.text + '15; color: ' + colors.text + '">'
+        + '<div class="w-7 sm:w-24 shrink-0 sticky left-0 z-10" style="' + stickyBg + '"><span class="hidden sm:inline opacity-50">Fase</span></div>'
+        + '<div class="w-10 shrink-0 text-right pr-2"><span class="opacity-50">gg</span></div>'
+        + '<div class="flex-grow relative h-4 normal-case tracking-normal">';
       ticks.forEach(t => { if (t.show) html += '<div class="absolute top-0 pl-1 whitespace-nowrap" style="left: ' + t.x + '%;">' + t.label + '</div>'; });
       html += '</div></div><div class="relative">';
       // Linee verticali dei mesi, dietro alle righe
-      html += '<div class="absolute inset-y-0 left-[8.5rem] right-0">';
+      html += '<div class="absolute inset-y-0 left-[4.25rem] sm:left-[8.5rem] right-0">';
       ticks.forEach(t => { if (t.line) html += '<div class="absolute inset-y-0 w-px" style="left: ' + t.x + '%; background-color: ' + colors.text + '15;"></div>'; });
-      html += '</div><div class="space-y-2">';
+      html += '</div><div>';
+
+      // Filetto sottile al centro della riga, dietro ai punti
+      const rowLine = '<div class="absolute inset-x-0 top-1/2 h-px pointer-events-none" style="background-color: ' + colors.text + '30;"></div>';
+      if (shots.length) {
+        html += '<div data-row="foto" class="flex items-center h-8 relative transition-opacity">';
+        html += '<div title="Foto" class="w-7 sm:w-24 shrink-0 self-stretch sticky left-0 z-10 flex items-center gap-1 text-xs font-medium pr-2" style="color: ' + colors.text + '; ' + stickyBg + '"><i data-lucide="images" class="w-3.5 h-3.5 shrink-0 opacity-80"></i><span class="hidden sm:inline truncate opacity-80">Foto</span></div>';
+        html += '<div class="w-10 shrink-0"></div><div class="flex-grow min-w-0 h-full relative flex items-center">';
+        html += rowLine;
+        shots.forEach(x => {
+          html += '<button onclick="openPhoto(' + x.k + ')" title="' + fmtDM(x.at) + '" class="absolute w-5 h-5 -translate-x-1/2 flex items-center justify-center cursor-pointer" style="left: ' + pos(x.at) + '%;"><span class="block w-1.5 h-1.5 rounded-full" style="background-color: ' + colors.text + ';"></span></button>';
+        });
+        html += '</div></div>';
+      }
 
       phases.forEach((p, i) => {
         const it = items[i];
@@ -319,18 +344,19 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
         let daysCell = '';
         if (it.kind === 'bar') {
           const d = Math.round((it.end - it.start) / DAY);
-          daysCell = it.real ? String(d) : '<span class="opacity-60">~' + d + '</span>';
+          daysCell = it.real ? String(d) : '<span class="opacity-50">' + d + '</span>';
         }
-        html += '<div class="flex items-center h-6 relative">';
-        html += '<div class="w-24 shrink-0 flex items-center gap-1 text-xs font-medium pr-2 opacity-80" style="color: ' + colors.text + '"><i data-lucide="' + p.icon + '" class="w-3 h-3 shrink-0"></i><span class="truncate">' + p.title + '</span></div>';
-        html += '<div class="w-10 shrink-0 text-right pr-2 text-xs font-bold tabular-nums" style="color: ' + colors.text + '">' + daysCell + '</div>';
+        html += '<div data-row="' + p.id + '" class="flex items-center h-8 relative transition-opacity">';
+        html += '<div title="' + p.title + '" class="w-7 sm:w-24 shrink-0 self-stretch sticky left-0 z-10 flex items-center gap-1 text-xs font-medium pr-2" style="color: ' + colors.text + '; ' + stickyBg + '"><i data-lucide="' + p.icon + '" class="w-3.5 h-3.5 shrink-0 opacity-80"></i><span class="hidden sm:inline truncate opacity-80">' + p.title + '</span></div>';
+        html += '<div class="w-10 shrink-0 flex items-center justify-end pr-2 text-xs font-bold tabular-nums" style="color: ' + colors.text + ';">' + daysCell + '</div>';
         html += '<div class="flex-grow min-w-0 h-full relative flex items-center">';
         if (it.kind === 'point') {
           const x = pos(it.at);
-          html += '<div class="absolute w-3 h-3 rounded-full -translate-x-1/2" style="left: ' + x + '%; background-color: ' + colors.text + ';"></div>';
+          html += '<div class="absolute w-1.5 h-1.5 rounded-full -translate-x-1/2" style="left: ' + x + '%; background-color: ' + colors.text + ';"></div>';
           // Vicino al bordo destro la data va a sinistra del punto, per non essere tagliata
-          const side = x > 85 ? 'right: ' + (100 - x) + '%; padding-right: 0.75rem;' : 'left: ' + x + '%; padding-left: 0.75rem;';
-          html += '<div class="absolute text-[10px] font-bold whitespace-nowrap" style="' + side + ' color: ' + colors.text + ';">' + fmtDM(it.at) + '</div>';
+          const side = x > 85 ? 'right: ' + (100 - x) + '%; padding-right: 0.25rem;' : 'left: ' + x + '%; padding-left: 0.25rem;';
+          // La data ha il fondo del riquadro, così il filetto non la attraversa
+          html += '<div class="absolute text-[10px] font-bold whitespace-nowrap" style="' + side + ' color: ' + colors.text + ';"><span class="px-1" style="' + stickyBg + '">' + fmtDM(it.at) + '</span></div>';
         } else if (it.kind === 'bar') {
           const left = pos(it.start);
           const width = Math.max(0.5, pos(it.end) - left);
@@ -350,6 +376,41 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
 
       html += '</div></div></div></div>';
       return html;
+    }
+
+    // 2b. RIEPILOGO OSSERVAZIONI (sotto il grafico): insetti e fitopatologie di tutto il diario.
+    // Il grafico dice quando, la legenda dice cosa: toccando un nome restano accese nel grafico
+    // solo le fasi in cui è stato osservato (secondo tocco: vista normale).
+    function buildObservations(config, log) {
+      const colors = getColors(config.bgColor);
+      const collect = kind => {
+        const map = new Map();
+        config.phases.forEach(p => (((log[p.id] || {})[kind]) || []).forEach(x => {
+          const name = String(x.name || '').trim(); if (!name) return;
+          const k = name.toLowerCase(), e = map.get(k) || { name: name, mood: '', phases: [] };
+          if (x.mood) e.mood = x.mood;
+          if (!e.phases.includes(p)) e.phases.push(p);
+          map.set(k, e);
+        }));
+        return Array.from(map.values());
+      };
+      const rank = m => m === 'bad' ? 0 : m === '' ? 1 : 2;   // prima i nocivi, poi da valutare, poi innocui
+      const ins = collect('insects').sort((a, b) => rank(a.mood) - rank(b.mood) || a.name.localeCompare(b.name));
+      const dis = collect('diseases').sort((a, b) => a.name.localeCompare(b.name));
+      if (!ins.length && !dis.length) return '';
+      const face = m => m === 'ok' ? 'face-slightly-smiling-plus' : (m === 'bad' ? 'face-angry' : 'meh');
+      const col = (kind, icon, title, list, withFace) => '<div class="min-w-0">'
+        + '<div class="mb-3" title="' + title + '"><i data-lucide="' + icon + '" class="w-5 h-5"></i></div>'
+        + (list.length
+          ? '<ul class="space-y-2">' + list.map(e => '<li>'
+              + '<button data-obs="' + escHTML(e.name.toLowerCase()) + '" data-phases="' + e.phases.map(p => p.id).join(' ') + '" onclick="focusObservation(this)" '
+              + 'class="obs-item flex items-center gap-1.5 max-w-full text-left text-sm cursor-pointer transition-opacity" style="color: ' + (e.mood === 'bad' ? colors.title : colors.text) + ';">'
+              + (withFace ? '<i data-lucide="' + face(e.mood) + '" class="w-3.5 h-3.5 shrink-0"></i>' : '')
+              + '<span class="truncate">' + escHTML(e.name) + '</span></button></li>').join('') + '</ul>'
+          : '<p class="text-xs opacity-40">nessuna osservazione</p>')
+        + '</div>';
+      return '<div class="grid grid-cols-2 gap-x-8 px-2 md:px-3" style="color: ' + colors.text + ';">'
+        + col('insects', 'bug', 'Insetti osservati', ins, true) + col('diseases', 'germ', 'Fitopatologie osservate', dis, false) + '</div>';
     }
 
     // 3. LISTA DELLE FASI (INPUT DATE E NOTE)
@@ -372,7 +433,7 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
         const daysFromPrev = diffDays(prevDate, data.date);
         const daysFromStart = i > 0 ? diffDays(firstDate, data.date) : null;
 
-        html += '<div class="relative z-10 md:pl-16 mb-16">';
+        html += '<div id="phase-' + p.id + '" class="relative z-10 md:pl-16 mb-16">';
         html += '<div class="hidden md:flex absolute left-0 top-0 w-8 h-8 rounded-full border items-center justify-center z-10" style="background-color: ' + colors.bg + '; border-color: ' + colors.text + '30; color: ' + colors.text + '80;"><i data-lucide="' + p.icon + '"></i></div>';
         
         // Titolo + memo condizioni osservate (temperatura min/max, ore di luce) sulla stessa riga;
@@ -482,7 +543,7 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
             html += '</div>';
             // Modulo insetto (con faccina facoltativa)
             html += '<div id="ins-form-' + p.id + '" data-mood="" class="items-center gap-1.5" style="display: none; color: ' + colors.text + ';">';
-            html += '<input type="text" placeholder="Nome insetto" ' + keys('saveInsect', 'cancelInsect') + ' class="' + inputCls + '" style="' + inputStyle + '" />';
+            html += '<input type="text" placeholder="Nome insetto" ' + keys('saveInsect', 'cancelInsect') + ' oninput="showSuggestions(' + "'insects'" + ', ' + q + ', this.value)" class="' + inputCls + '" style="' + inputStyle + '" />';
             html += '<button data-m="ok" onclick="setInsectMood(' + q + ', ' + "'ok'" + ')" title="Innocuo" class="p-1 cursor-pointer" style="opacity: 0.35"><i data-lucide="face-slightly-smiling-plus" class="w-5 h-5"></i></button>';
             html += '<button data-m="bad" onclick="setInsectMood(' + q + ', ' + "'bad'" + ')" title="Nocivo" class="p-1 cursor-pointer" style="opacity: 0.35"><i data-lucide="face-angry" class="w-5 h-5"></i></button>';
             html += '<button onclick="saveInsect(' + q + ')" title="Conferma" class="p-1 cursor-pointer"><i data-lucide="check" class="w-5 h-5"></i></button>';
@@ -491,10 +552,13 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
             // Modulo fitopatologia (solo nome)
             html += '<div id="dis-form-' + p.id + '" class="items-center gap-1.5" style="display: none; color: ' + colors.text + ';">';
             html += '<i data-lucide="germ" class="w-4 h-4 shrink-0"></i>';
-            html += '<input type="text" placeholder="Nome malattia" ' + keys('saveDisease', 'cancelDisease') + ' class="' + inputCls + '" style="' + inputStyle + '" />';
+            html += '<input type="text" placeholder="Nome malattia" ' + keys('saveDisease', 'cancelDisease') + ' oninput="showSuggestions(' + "'diseases'" + ', ' + q + ', this.value)" class="' + inputCls + '" style="' + inputStyle + '" />';
             html += '<button onclick="saveDisease(' + q + ')" title="Conferma" class="p-1 cursor-pointer"><i data-lucide="check" class="w-5 h-5"></i></button>';
             html += '<button onclick="cancelDisease(' + q + ')" title="Annulla" class="p-1 cursor-pointer opacity-50"><i data-lucide="x" class="w-4 h-4"></i></button>';
             html += '</div>';
+            // Suggerimenti: insetti e malattie già osservati altrove, da aggiungere con un tocco
+            html += '<div id="ins-sugg-' + p.id + '" class="w-full flex-wrap items-center gap-x-3 gap-y-2" style="display: none; color: ' + colors.text + ';"></div>';
+            html += '<div id="dis-sugg-' + p.id + '" class="w-full flex-wrap items-center gap-x-3 gap-y-2" style="display: none; color: ' + colors.text + ';"></div>';
             // Etichette, una di seguito all'altra: prima gli insetti, poi le fitopatologie
             insects.forEach((ins, k) => {
               html += '<span class="' + pill + '" style="' + pillStyle + '">';
@@ -680,15 +744,14 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
       const cyc = isArchive ? current.cycles[viewingCycle] : null;
       const list = (await photosOfPlant(current.id)).filter(p => isArchive ? (cyc.id && p.cycleId === cyc.id) : !p.cycleId);
       list.sort((a, b) => (a.takenAt + a.addedAt).localeCompare(b.takenAt + b.addedAt));
+      const changed = list.length !== galleryPhotos.length || list.some((x, k) => !galleryPhotos[k] || galleryPhotos[k].id !== x.id || galleryPhotos[k].takenAt !== x.takenAt);
       galleryPhotos = list;
       const cfg = isArchive ? cyc.config : current.config, c = getColors(cfg.bgColor);
+      // Aggiorna la riga foto della Panoramica
+      if (changed) { const g = document.getElementById('ui-gantt'); if (g) { g.innerHTML = buildGantt(cfg, isArchive ? cyc.log : log, isArchive, list); lucide.createIcons(); } }
       if (isArchive && !list.length) { box.innerHTML = ''; box.style.display = 'none'; return; }
       box.style.display = '';
       let html = '';
-      if (!isArchive) {
-        html += '<div class="flex justify-center mb-6"><label title="Aggiungi foto dalla Galleria" class="w-8 h-8 rounded-full border flex items-center justify-center cursor-pointer" style="border-color: ' + c.text + '30; color: ' + c.text + ';">'
-          + '<i data-lucide="image-plus" class="w-4 h-4"></i><input type="file" accept="image/*" multiple class="hidden" onchange="addPhotos(this)"></label></div>';
-      }
       if (list.length) {
         html += '<div class="grid grid-cols-5 gap-2">';
         list.forEach((p, i) => { html += '<button onclick="openPhoto(' + i + ')" title="' + escHTML(fmtDMY(p.takenAt)) + '" class="block cursor-pointer"><img src="' + p.thumb + '" alt="" class="block w-full aspect-square" style="image-rendering: pixelated;"></button>'; });
@@ -827,6 +890,7 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
       if (!phases.length) throw new Error('Nessuna fase');
       return {
         appTitle: cleanText(c.appTitle, 80) || 'Pianta',
+        family: cleanText(c.family, 80),
         bgColor: /^#[0-9a-f]{6}$/i.test(c.bgColor) ? c.bgColor : '#66023C',
         phases: phases
       };
@@ -864,6 +928,12 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
     function daysAgo(iso) {
       if (!iso) return null;
       return Math.floor((Date.now() - new Date(iso).getTime()) / 86400000);
+    }
+    // Durata di un ciclo in giorni, dalla prima all'ultima data osservata
+    function cycleDays(log) {
+      const dates = Object.values(log || {}).map(d => d && d.date).filter(Boolean).sort();
+      if (dates.length < 2) return dates.length ? '1 giorno' : 'nessuna data';
+      return diffDays(dates[0], dates[dates.length - 1]) + ' gg';
     }
     function cycleRange(log) {
       const dates = Object.values(log || {}).map(d => d && d.date).filter(Boolean).sort();
@@ -1075,6 +1145,8 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
         + '<div class="flex items-center gap-3"><input id="cp-hex" type="text" placeholder="HEX" aria-label="Codice HEX" maxlength="7" spellcheck="false" oninput="cpHex(this.value)" class="flex-1 min-w-0 p-2 bg-slate-950 border border-slate-800 rounded-lg text-sm text-white uppercase tracking-wider"/></div>'
         + '<p id="cp-note" class="text-[11px] text-amber-400 -mt-2 empty:hidden"></p>'
         + '</div>'
+        + '<label class="block text-xs text-slate-400 mt-4 mb-1.5 font-medium">Famiglia</label>'
+        + '<input type="text" id="input-family" value="' + escHTML(config.family || '') + '" placeholder="es. Caprifoliaceae" oninput="updateConfig(\'family\', this.value)" class="w-full p-2.5 bg-slate-900 border border-slate-800 rounded-lg focus:border-emerald-500 outline-none text-sm text-white"/>'
         + '</div></section>'
         + '<section class="space-y-4 border-t border-slate-800 pt-6"><h2 class="ui-title text-sm uppercase tracking-wider text-slate-400 font-bold flex items-center gap-2"><i data-lucide="list-ordered" class="w-4 h-4"></i> Fasi</h2>'
         + '<div id="phases-list-editor" class="space-y-4"></div>'
@@ -1136,7 +1208,7 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
     }
 
     function updateConfig(field, value) {
-      config[field] = field === 'appTitle' ? cleanText(value, 80) : value;
+      config[field] = (field === 'appTitle' || field === 'family') ? cleanText(value, 80) : value;
       touch(current);
       updateLivePreview();
     }
@@ -1223,7 +1295,7 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
       view.style.color = c.text;
       view.innerHTML = `
         <div class="flex items-center justify-between pb-4 border-b mb-6" style="border-color: ${c.text}20">
-          <div class="flex items-center gap-3"><h1 class="text-2xl font-title tracking-wide" style="color: ${c.title}">${escHTML(config.appTitle)}</h1></div>
+          <div><h1 class="text-2xl font-title tracking-wide" style="color: ${c.title}">${escHTML(config.appTitle)}</h1>${config.family ? `<p class="text-sm italic font-body" style="color: ${c.text}; opacity: 0.75">${escHTML(config.family)}</p>` : ''}</div>
         </div>
         <div class="py-2 mb-8">${buildTimeline(config, previewLog)}</div>
         <div class="mb-10 bg-[#000000]/10 p-4 rounded-lg border" style="border-color: ${c.text}10">
@@ -1262,54 +1334,90 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
       setTheme(c.bg);
       document.title = cfg.appTitle;
 
-      let html = '<header class="sticky top-0 z-50 h-16 flex items-center border-b" style="background-color: ' + c.bg + '; border-color: ' + c.text + '20">'
+      let html = '<header id="diary-header" class="sticky top-0 z-50 min-h-16 py-3 flex items-center border-b" style="background-color: ' + c.bg + '; border-color: ' + c.text + '20">'
         + '<div class="w-full max-w-3xl mx-auto px-4 flex items-center justify-between gap-3">'
         + '<div class="flex items-center gap-2 min-w-0">'
         + '<a href="' + (isArchive ? '#/pianta/' + pl.id : '#/') + '" title="' + (isArchive ? 'Torna al ciclo in corso' : 'Giardino') + '" class="p-1.5 -ml-1.5 rounded-md opacity-70 hover:opacity-100" style="color: ' + c.title + '"><i data-lucide="arrow-left" class="w-5 h-5"></i></a>'
-        + '<h1 class="text-2xl font-title tracking-wide truncate" style="color: ' + c.title + '">' + escHTML(cfg.appTitle) + '</h1></div>';
+        + '<div class="min-w-0"><h1 class="text-2xl font-title tracking-wide truncate leading-tight" style="color: ' + c.title + '">' + escHTML(cfg.appTitle) + '</h1>'
+        + (cfg.family ? '<p class="text-sm italic truncate" style="color: ' + c.text + '; opacity: 0.75">' + escHTML(cfg.family) + '</p>' : '')
+        + '</div></div>';
       if (isArchive) {
         html += '<button onclick="deleteCycle()" class="flex items-center gap-2 px-3 py-1.5 border rounded-md text-xs font-medium cursor-pointer shrink-0" style="border-color: ' + c.text + '30; color: ' + c.text + '"><i data-lucide="trash-2" class="w-3.5 h-3.5"></i> <span class="hidden sm:inline">Elimina ciclo</span></button>';
       } else {
         html += '<button onclick="closeCycle()" class="flex items-center gap-2 px-3 py-1.5 border rounded-md text-xs font-medium cursor-pointer shrink-0" style="border-color: ' + c.text + '30; color: ' + c.text + '"><i data-lucide="archive" class="w-3.5 h-3.5"></i> <span class="hidden sm:inline">Chiudi ciclo</span></button>';
       }
       html += '</div></header>';
-      html += '<main class="max-w-3xl mx-auto px-4 mt-6">';
+      html += '<main class="max-w-3xl mx-auto px-4">';
+      html += '<div class="sticky z-40 border-b py-4 mb-10" id="ui-timeline" style="top: 4rem; background-color: ' + c.bg + '; border-color: ' + c.text + '10"></div>';
+      // Cicli: in una riga, prima della Panoramica
       if (isArchive) {
-        html += '<div class="mb-6 text-sm flex items-center gap-2" style="color: ' + c.text + '"><i data-lucide="history" class="w-4 h-4"></i>Ciclo ' + (cycleIdx + 1) + ' · ' + cycleRange(cyc.log) + ' · archiviato il ' + fmtDMY(cyc.closedAt) + '</div>';
-      }
-      html += '<div class="sticky top-16 z-40 border-b py-4 mb-10" id="ui-timeline" style="background-color: ' + c.bg + '; border-color: ' + c.text + '10"></div>';
-      html += '<section class="mb-14"><h3 class="text-2xl font-title font-medium tracking-wide mb-4 flex items-center gap-2" style="color: ' + c.title + '"><i data-lucide="activity" class="w-5 h-5 opacity-80"></i> Panoramica</h3>';
-      html += '<div id="ui-gantt" class="border rounded-lg p-4 md:p-6 bg-black/10 overflow-x-auto overflow-y-hidden" style="border-color: ' + c.text + '15"></div></section>';
-      html += '<div class="relative" id="ui-phases"></div>';
-      // Galleria: in fondo, separata dall'ultima fase
-      html += '<section id="ui-gallery" class="mt-4 pt-8 pb-8 border-t" style="border-color: ' + c.text + '20"></section>';
-
-      // Cicli precedenti
-      if (!isArchive && pl.cycles && pl.cycles.length) {
-        html += '<section class="mt-4 pt-8 border-t" style="border-color: ' + c.text + '20">';
-        html += '<h3 class="text-2xl font-title font-medium tracking-wide mb-4 flex items-center gap-2" style="color: ' + c.title + '"><i data-lucide="history" class="w-5 h-5 opacity-80"></i> Cicli precedenti</h3><div class="flex flex-col">';
+        html += '<div class="-mt-6 mb-10 text-sm flex flex-wrap items-center gap-x-2 gap-y-1" style="color: ' + c.text + '"><i data-lucide="history" class="w-4 h-4"></i>Ciclo ' + (cycleIdx + 1) + ' · ' + cycleDays(cyc.log) + ' <span class="opacity-60">· archiviato il ' + fmtDMY(cyc.closedAt) + '</span></div>';
+      } else if (pl.cycles && pl.cycles.length) {
+        html += '<div class="-mt-6 mb-10 text-sm flex flex-wrap items-center gap-x-4 gap-y-1" style="color: ' + c.text + '"><i data-lucide="history" class="w-4 h-4" title="Cicli precedenti"></i>';
         pl.cycles.slice().reverse().forEach((cy, k) => {
           const idx = pl.cycles.length - 1 - k;
-          html += '<a href="#/pianta/' + pl.id + '/ciclo/' + idx + '" class="flex items-center justify-between gap-3 py-3 border-b text-sm" style="border-color: ' + c.text + '15; color: ' + c.text + '"><span>Ciclo ' + (idx + 1) + '</span><span class="opacity-60">' + cycleRange(cy.log) + '</span></a>';
+          html += '<a href="#/pianta/' + pl.id + '/ciclo/' + idx + '" class="underline underline-offset-4 decoration-1" style="text-decoration-color: ' + c.text + '40;">Ciclo ' + (idx + 1) + ' <span class="opacity-60">· ' + cycleDays(cy.log) + '</span></a>';
         });
-        html += '</div></section>';
+        html += '</div>';
       }
+      html += '<section class="mb-14"><h3 class="text-2xl font-title font-medium tracking-wide mb-4 flex items-center gap-2" style="color: ' + c.title + '"><i data-lucide="activity" class="w-5 h-5 opacity-80"></i> Panoramica</h3>';
+      html += '<div id="ui-gantt" class="border rounded-lg px-2 py-4 md:px-3 md:py-6 bg-black/10 overflow-x-auto overflow-y-hidden" style="border-color: ' + c.text + '15"></div>';
+      html += '<div id="ui-obs" class="mt-6"></div></section>';
+      html += '<div class="relative" id="ui-phases"></div>';
+      // Galleria in fondo. La barra con il pulsante "aggiungi foto" resta fissa in basso mentre scorri
+      // e, arrivati in fondo, si ferma sopra le miniature facendo da separatore.
+      if (!isArchive) {
+        html += '<div id="ui-photo-bar" class="sticky bottom-0 z-30 -mx-4 px-4 py-2 mt-4 border-t flex justify-center" style="background-color: ' + c.bg + '; border-color: ' + c.text + '20">'
+          + '<label title="Aggiungi foto dalla Galleria" class="w-8 h-8 rounded-full border flex items-center justify-center cursor-pointer" style="border-color: ' + c.text + '30; color: ' + c.text + ';">'
+          + '<i data-lucide="image-plus" class="w-4 h-4"></i><input type="file" accept="image/*" multiple class="hidden" onchange="addPhotos(this)"></label></div>';
+      }
+      html += '<section id="ui-gallery" class="pt-4 pb-8' + (isArchive ? ' mt-4 border-t' : '') + '" style="border-color: ' + c.text + '20"></section>';
+
       html += '</main>';
       document.getElementById('app').innerHTML = html;
+      placeTimeline();
       window.scrollTo(0, 0);
+      galleryPhotos = [];   // la riga foto della Panoramica si riempie appena la galleria ha caricato le foto
       renderApp();
       renderGallery();
     }
+
+    function placeTimeline() {
+      const hd = document.getElementById('diary-header'), tl = document.getElementById('ui-timeline');
+      if (hd && tl) tl.style.top = hd.offsetHeight + 'px';
+    }
+    window.addEventListener('resize', placeTimeline);
 
     function renderApp() {
       if (!current) return;
       const isArchive = viewingCycle !== null;
       const cfg = isArchive ? current.cycles[viewingCycle].config : current.config;
       document.getElementById('ui-timeline').innerHTML = buildTimeline(cfg, log);
-      document.getElementById('ui-gantt').innerHTML = buildGantt(cfg, log, isArchive);
+      document.getElementById('ui-gantt').innerHTML = buildGantt(cfg, log, isArchive, galleryPhotos);
+      document.getElementById('ui-obs').innerHTML = buildObservations(cfg, log);
       document.getElementById('ui-phases').innerHTML = buildPhases(cfg, log, false, isArchive);
       lucide.createIcons();
     }
+
+    // Legenda di insetti e malattie: evidenzia nel grafico le fasi in cui un nome è stato osservato
+    window.focusObservation = function (btn) {
+      const on = btn.dataset.active !== '1';
+      document.querySelectorAll('#ui-obs .obs-item').forEach(b => { b.dataset.active = ''; b.style.opacity = on ? '0.35' : ''; });
+      const phases = on ? btn.dataset.phases.split(' ') : null;
+      // Si attenua il contenuto delle righe, non la riga intera: la colonna fissa deve restare opaca sopra le barre
+      document.querySelectorAll('#ui-gantt [data-row]').forEach(r => {
+        const dim = on && !phases.includes(r.dataset.row) ? '0.2' : '';
+        r.querySelectorAll(':scope > div:not(.sticky), :scope > div.sticky > *').forEach(el => { el.style.opacity = dim; });
+        r.dataset.dim = dim ? '1' : '';
+      });
+      if (on) { btn.dataset.active = '1'; btn.style.opacity = '1'; }
+    };
+
+    // Porta alla scheda di una fase, tenendo conto dell'intestazione e della timeline fisse
+    window.goToPhase = function (id) {
+      const el = document.getElementById('phase-' + id);
+      if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 170, behavior: 'smooth' });
+    };
 
     function saveLog() { current.log = log; touch(current); }
 
@@ -1329,8 +1437,10 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
       f.style.display = 'flex'; f.dataset.mood = '';
       f.querySelectorAll('[data-m]').forEach(b => { b.style.opacity = '0.35'; });
       const inp = f.querySelector('input'); inp.value = ''; inp.focus();
+      showSuggestions('insects', id, '');
     };
     window.cancelInsect = function (id) {
+      hideSuggestions('insects', id);
       document.getElementById('ins-form-' + id).style.display = 'none';
       document.getElementById('obs-btns-' + id).style.display = '';
     };
@@ -1359,14 +1469,52 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
       saveLog(); renderApp();
     };
 
+    // ---------- Insetti e malattie già osservati ----------
+    // Raccoglie i nomi da tutti i diari e dai cicli archiviati (prima quelli della pianta aperta, poi i più frequenti),
+    // ricordando per gli insetti l'ultima faccina usata.
+    function knownObservations(kind) {
+      const map = new Map();
+      const scan = (lg, w) => Object.values(lg || {}).forEach(d => ((d && d[kind]) || []).forEach(x => {
+        const name = String(x.name || '').trim(); if (!name) return;
+        const k = name.toLowerCase(), e = map.get(k) || { name: name, mood: '', n: 0 };
+        e.n += w; if (x.mood) e.mood = x.mood; map.set(k, e);
+      }));
+      store.plants.forEach(pl => { const w = pl === current ? 100 : 1; scan(pl.log, w); (pl.cycles || []).forEach(c => scan(c.log, w)); });
+      return Array.from(map.values()).sort((x, y) => y.n - x.n);
+    }
+    function suggBox(kind, id) { return document.getElementById((kind === 'insects' ? 'ins' : 'dis') + '-sugg-' + id); }
+    function hideSuggestions(kind, id) { const b = suggBox(kind, id); if (b) { b.style.display = 'none'; b.innerHTML = ''; } }
+    window.showSuggestions = function (kind, id, filter) {
+      const box = suggBox(kind, id); if (!box) return;
+      const here = new Set((((log[id] || {})[kind]) || []).map(x => x.name.trim().toLowerCase()));
+      const f = String(filter || '').trim().toLowerCase();
+      const list = knownObservations(kind).filter(x => !here.has(x.name.toLowerCase()) && (!f || x.name.toLowerCase().includes(f))).slice(0, 12);
+      if (!list.length) return hideSuggestions(kind, id);
+      const face = m => m === 'ok' ? 'face-slightly-smiling-plus' : (m === 'bad' ? 'face-angry' : 'meh');
+      box.innerHTML = '<span class="text-[10px] uppercase tracking-wider opacity-50">Già visti</span>' + list.map(x =>
+        '<button data-name="' + escHTML(x.name) + '" data-mood="' + (x.mood || '') + '" onclick="pickObservation(\'' + kind + '\', \'' + id + '\', this.dataset.name, this.dataset.mood)" title="Aggiungi" '
+        + 'class="inline-flex items-center gap-1 text-xs px-2 py-0.5 rounded-full border border-dashed cursor-pointer opacity-80 hover:opacity-100" style="border-color: currentColor;">'
+        + '<i data-lucide="' + (kind === 'insects' ? face(x.mood) : 'germ') + '" class="w-3 h-3"></i>' + escHTML(x.name) + '</button>').join('');
+      box.style.display = 'flex';
+      lucide.createIcons();
+    };
+    window.pickObservation = function (kind, id, name, mood) {
+      if (!log[id]) log[id] = {};
+      if (!log[id][kind]) log[id][kind] = [];
+      log[id][kind].push(kind === 'insects' ? { name: name, mood: mood || '' } : { name: name });
+      saveLog(); renderApp();
+    };
+
     // Fitopatologie: solo nome, etichetta con icona germ
     window.openDisease = function (id) {
       document.getElementById('obs-btns-' + id).style.display = 'none';
       const f = document.getElementById('dis-form-' + id);
       f.style.display = 'flex';
       const inp = f.querySelector('input'); inp.value = ''; inp.focus();
+      showSuggestions('diseases', id, '');
     };
     window.cancelDisease = function (id) {
+      hideSuggestions('diseases', id);
       document.getElementById('dis-form-' + id).style.display = 'none';
       document.getElementById('obs-btns-' + id).style.display = '';
     };

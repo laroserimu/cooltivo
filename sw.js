@@ -1,5 +1,5 @@
 // Cooltivo: funzionamento offline. Serve i file dalla cache e li aggiorna in background.
-const CACHE = 'cooltivo-v3';
+const CACHE = 'cooltivo-v4';
 const ASSETS = [
   "./",
   "./index.html",
@@ -11,6 +11,7 @@ const ASSETS = [
   "./fonts/instrument-serif-400.woff2",
   "./fonts/overlock-400.woff2",
   "./fonts/overlock-700.woff2",
+  "./fonts/overlock-400-italic.woff2",
   "./fonts/orbitron-400.woff2",
   "./fonts/orbitron-700.woff2",
   "./fonts/roboto-400.woff2",
