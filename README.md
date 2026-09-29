@@ -5,7 +5,7 @@ Diario di coltivazione personale. Web app installabile, funziona offline.
 - **Giardino**: elenco delle piante con la fase in corso e la prossima prevista.
 - **Editor**: struttura di ogni pianta (fasi, icone, tipi di fase, durate previste).
 - **Diario**: date di osservazione, note, insetti, temperature e luce; Panoramica con previsioni.
-- **Cicli**: "Chiudi ciclo" archivia il ciclo concluso, consultabile in fondo al diario.
+- **Cicli**: "Chiudi ciclo" mostra un riepilogo e archivia il ciclo; il nuovo parte dalla data di chiusura. Se il nuovo ciclo è ancora vuoto si può riaprire il precedente. Nei cicli archiviati si possono ancora aggiungere ed eliminare foto.
 
 ## Dati e privacy
 
